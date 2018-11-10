@@ -12,12 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login.Login">
+
+        <!-- 최초 -->
+        <activity android:name=".login.Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".login.Login">
+
         </activity>
         <activity android:name=".login.SignUp" />
 
@@ -30,6 +35,12 @@
         <activity android:name=".friend.FrAdd"/>
         <!-- 메인화면(viewPager) -->
         <activity android:name=".main.MainActivity" />
+        <!-- post관련 Activity -->
+        <activity android:name=".post.PostMarge" />
+        <activity android:name=".post.PostDetail" />
+
+        <!--채팅관련-->
+        <activity android:name=".chat.ChatRoom" />
     </application>
 
 </manifest>

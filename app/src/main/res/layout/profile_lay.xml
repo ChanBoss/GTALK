@@ -18,9 +18,32 @@
 
         <ImageView
             android:id="@+id/userImg"
+            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srcCompat="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="ADD"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/userLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="Korean"
+            android:textSize="16dp"
+            />
 
     </FrameLayout>
 
@@ -43,42 +66,32 @@
             android:gravity="center"
             android:textColor="@color/colorPrimary"
             android:text="nickname"
-            android:textSize="20dp"
+            android:textSize="24dp"
             android:fontFamily="@font/"
             />
-        <android.support.v4.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+
         <TextView
             android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
             android:gravity="center"
             android:text="name"
-            android:textSize="20dp"
+            android:textSize="24dp"
             />
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
-        <TextView
-            android:id="@+id/userLang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorPrimary"
-            android:gravity="center"
-            android:text="Korean"
-            android:textSize="20dp"
-            />
+
 
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
         <Button
+            android:visibility="gone"
+
             android:id="@+id/sendBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,6 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="4dp" />
         <Button
+            android:visibility="gone"
+
             android:id="@+id/deleteBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

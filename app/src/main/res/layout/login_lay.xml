@@ -44,11 +44,6 @@
             android:layout_width="match_parent"
             android:layout_height="4dp" />
 
-        <CheckBox
-            android:id="@+id/autoLoginCh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Auto Login" />
 
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
